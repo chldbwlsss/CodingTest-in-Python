@@ -1,0 +1,13 @@
+input = 'AJKDL413D5'
+data = sorted(input)
+
+result = ''
+sum = 0
+
+for i in range(len(data)):
+  if data[i].isalpha():
+    result += data[i]
+  if data[i].isdigit():
+    sum += int(data[i])
+
+print(result + str(sum))
