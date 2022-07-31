@@ -1,0 +1,26 @@
+n = 5
+ndata = [8, 3, 7, 9, 2]
+m = 3
+mdata = [5, 7, 9]
+
+
+def search(array, target, start, end):
+  array.sort()
+  while start <= end:
+    mid = (start + end) // 2
+    if array[mid] == target[i]:
+      return target[i]
+    elif array[mid] > target[i]:
+      end = mid - 1
+    else:
+      start = mid + 1
+  return None
+
+for i in range(len(mdata)):
+  result = search(ndata, mdata, 0, n-1)
+  if result == None:
+    print('no', end = ' ')
+  else:
+    print('yes', end = ' ')
+  
+
